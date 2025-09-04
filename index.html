@@ -1,0 +1,234 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Love Letter for KUKKU jii 💌</title>  
+
+<!-- Google Fonts -->  
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
+<style>  
+body {  
+    margin:0;  
+    font-family: 'Dancing Script', cursive;  
+    background:#000;  
+    overflow:hidden;  
+    color:white;  
+    display:flex;  
+    justify-content:center;  
+    align-items:center;  
+    height:100vh;  
+}  
+
+/* Envelope style */  
+#envelope {  
+    width:300px;  
+    height:200px;  
+    background:#ff4b5c;  
+    position:relative;  
+    cursor:pointer;  
+    border-radius:10px;  
+    box-shadow:0 5px 15px rgba(0,0,0,0.5);  
+    display:flex;  
+    justify-content:center;  
+    align-items:center;  
+    transition: transform 1s;  
+    z-index:10;  
+}  
+#envelope h2 {  
+    margin:0;  
+    text-align:center;  
+    color:white;  
+}  
+
+/* Letter pages container */  
+#letter {  
+    position:absolute;  
+    top:0;  
+    left:0;  
+    width:100%;  
+    height:100%;  
+    background:black;  
+    display:none;  
+    flex-direction:column;  
+    align-items:center;  
+    overflow-y:auto;  
+}  
+
+/* Section styling */  
+section {  
+    min-height:100vh;  
+    width:100%;  
+    display:flex;  
+    justify-content:center;  
+    align-items:center;  
+    text-align:center;  
+    flex-direction:column;  
+    position:relative;  
+    padding:40px;  
+}  
+
+/* Paper effect (now black paper) */  
+.paper {  
+    background: #000;  
+    border: 2px solid #444;  
+    border-radius: 15px;  
+    box-shadow: 0 4px 20px rgba(255,255,255,0.2);  
+    padding: 30px;  
+    max-width: 700px;  
+    font-size:26px;  
+    line-height:1.8em;  
+    font-family: 'Great Vibes', cursive;  
+    position:relative;  
+}  
+
+/* Gradient text */  
+.paper span {  
+    background: linear-gradient(90deg, #ff4b5c, #ff9a8b, #f6d365, #c779d0, #4bc0c8);  
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;  
+    background-clip: text;  
+    font-weight:bold;  
+}  
+
+/* Stars */  
+.star {  
+    position:fixed;  
+    border-radius:50%;  
+    background: rgba(255,255,255,0.8);  
+    animation: twinkle 2s infinite alternate;  
+    z-index:1;  
+    box-shadow: 0 0 4px 1px rgba(255,255,255,0.5);  
+}  
+@keyframes twinkle {  
+    0% {opacity:0.2;}  
+    50% {opacity:1;}  
+    100% {opacity:0.2;}  
+}  
+
+/* Navigation buttons */  
+.nav-btn {  
+    margin-top:20px;  
+    background:#ff4b5c;  
+    border:none;  
+    padding:10px 20px;  
+    color:white;  
+    font-size:16px;  
+    border-radius:10px;  
+    cursor:pointer;  
+    z-index:10;  
+    font-family:'Trebuchet MS', sans-serif;  
+}  
+.nav-btn:hover { background:#ff2e3c; }  
+</style>  
+</head>  
+<body>  
+
+<!-- Envelope Cover -->  
+<div id="envelope">  
+    <h2>💌 Click to Open Your Love Letter 💌</h2>  
+</div>  
+
+<!-- Letter Pages -->  
+<div id="letter">  
+    <!-- Section 1 -->  
+    <section id="sec1">  
+        <div class="paper">  
+            <span>💗💖🌷<br>  
+            MY DEAREST KUKKU JII,<br>  
+            You are the soft glow that lingers after sunset,  
+            the gentle hush of night that wraps my soul in peace.  
+            In every breath I take, your presence is woven,  
+            like a melody that plays without beginning or end.<br>💖🌷💗</span>  
+        </div>  
+        <button class="nav-btn" onclick="scrollToSection('sec2')">Next ️</button>  
+    </section>  
+
+    <!-- Section 2 -->  
+    <section id="sec2">  
+        <div class="paper">  
+            <span>💖🌷💗<br>  
+            When the world feels heavy, your love steadies me.  
+            When my days are bright, you are the reason the light feels warmer.  
+            Even in silence, I hear you  
+            in the rhythm of my heart, in the whispers of my dreams.<br>💗🌷💖</span>  
+        </div>  
+        <button class="nav-btn" onclick="scrollToSection('sec1')"> Back</button>  
+        <button class="nav-btn" onclick="scrollToSection('sec3')">Next ️</button>  
+    </section>  
+
+    <!-- Section 3 -->  
+    <section id="sec3">  
+        <div class="paper">  
+            <span>💗🌷💖<br>  
+            You are not just a part of my world,  
+            you are the very sky above it.  
+            Every star reminds me of your eyes,  
+            every dawn feels like your smile unfolding.  
+            The universe may scatter wonders across endless skies,  
+            yet none shine as tenderly as you do within my soul.<br>💖🌷💗</span>  
+        </div>  
+        <button class="nav-btn" onclick="scrollToSection('sec2')">️ Back</button>  
+        <button class="nav-btn" onclick="scrollToSection('sec4')">Next ️</button>  
+    </section>  
+
+    <!-- Section 4 -->  
+    <section id="sec4">  
+        <div class="paper">  
+            <span>💖💗🌷<br>  
+            I do not measure my love in days or years,  
+            but in countless moments you’ve made timeless.  
+            You are the poem I could never stop writing,  
+            the story that even eternity cannot end.  
+            And so I promise, my Kukku jii  
+            in every breath, in every step, my love will seek you,  
+            find you, and hold you, always.<br>💗🌷💖</span>  
+        </div>  
+        <button class="nav-btn" onclick="scrollToSection('sec3')">️ Back</button>  
+        <button class="nav-btn" onclick="scrollToSection('sec1')">Start </button>  
+    </section>  
+</div>  
+
+<!-- Music -->  
+<audio id="bgMusic" loop>  
+    <source src="your-music.mp3" type="audio/mpeg">  
+</audio>  
+
+<script>  
+// Open the letter on click  
+const envelope = document.getElementById('envelope');  
+const letter = document.getElementById('letter');  
+const music = document.getElementById('bgMusic');  
+
+envelope.addEventListener('click',()=>{  
+    envelope.style.transform='scaleY(0.1)';  
+    setTimeout(()=>{  
+        envelope.style.display='none';  
+        letter.style.display='flex';  
+        music.play();  
+    },1000);  
+});  
+
+// Smooth scroll  
+function scrollToSection(id){  
+    document.getElementById(id).scrollIntoView({behavior:'smooth'});  
+}  
+
+// Stars  
+for(let i=0;i<150;i++){  
+    const star=document.createElement('div');  
+    star.className='star';  
+    const size = 1 + Math.random()*3;  
+    star.style.width = size + 'px';  
+    star.style.height = size + 'px';  
+    star.style.top = Math.random()*100 + 'vh';  
+    star.style.left = Math.random()*100 + 'vw';  
+    star.style.animationDuration = (1 + Math.random()*3) + 's';  
+    star.style.boxShadow = `0 0 ${size*2}px ${size/2}px rgba(255,255,255,0.5)`;  
+    document.body.appendChild(star);  
+}  
+</script>  
+
+</body>  
+</html>
